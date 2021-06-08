@@ -10,9 +10,8 @@ You can integrate a ForgeRock account with OneTrust to manage consent preference
 
 ## To configure a Preference Center in OneTrust 
 With **Universal Consent & Preference Management**, you can create a Preference Center that data subjects can use to define whether to give or withdraw their consent on a deeper level. When you create a Preference Center, you'll need to give a name, select whether to use the Original or Enhanced template, and define additional basic details. You can then begin adding purposes that you want to make available for users to specify their consent, customize the branding, and finalize any additional configurations that you want to make.
-​
-
-<br>For this integration, there are **two** preferences created in ForgeRock. You will need to create a purpose and two topics, then associate that purpose to a Preference Center in OneTrust. You'll also need to record the Preference Center ID and Purpose ID to use later in the workflow configuration.
+<br></br>
+For this integration, there are **two** preferences created in ForgeRock. You will need to create a purpose and two topics, then associate that purpose to a Preference Center in OneTrust. You'll also need to record the Preference Center ID and Purpose ID to use later in the workflow configuration.
 
 ## To set up credentials in OneTrust
 Once you have performed the above steps for creating the Preference Center, you will need to setup credentials prior to creating the integration workflow that will be triggered when the OneTrust Preference center is updated. For the purposes of this documentation, we are using Basic Authentication credentials.
@@ -22,7 +21,7 @@ Once you have performed the above steps for creating the Preference Center, you 
 4. Select ​**HTTP​** from the ​Connector Type​​ field. The screen will populate suggested fields based on this connector type.
 5. Select ​**Basic**​ from the ​Auth Type​​ field. The screen will populate suggested fields based on this authentication type.
 6. Create a new ​Basic​​ credential using your ForgeRock instance information using the provided fields.
-<img src="https://cdn.onetrust.com/images/my-ot/enter-credential-details.png" width="00"/>
+<img src="https://cdn.onetrust.com/images/my-ot/enter-credential-details.png" width="500"/>
 
 7. After you've provided the fields, click the *Save* button. 
 
@@ -47,7 +46,8 @@ Once you have performed the above steps for creating the Preference Center, you 
 You will need to create the initial workflow that will sync consent preferences between Onetrust and ForgeRock.
 1. On the ​**Integrations**​ menu, select ​**Gallery​​**. The ​Integrations Gallery​​ screen appears.
 2. Search for **Forgerock** in the search bar, then select the tile.
-<img src="https://cdn.onetrust.com/images/my-ot/integrations-gallery-search.png" width="500"/>
+
+    <img src="https://cdn.onetrust.com/images/my-ot/integrations-gallery-search.png" width="500"/>
 
 3. Click the ​*Add*​ button on the ​**Consent: OneTrust Consent Updates ForgeRock​** tile. The ​Add Workflow Name​​ modal appears.
 
@@ -58,7 +58,8 @@ You will need to create the initial workflow that will sync consent preferences 
     <img src="https://cdn.onetrust.com/images/my-ot/add_workflow1.png" width="400"/>
 
 5. The initial workflow for the ForgeRock integration will appear in the ​Workflow Builder​​ screen.
-<img src="https://cdn.onetrust.com/images/my-ot/workflow1.png" width="550"/>
+
+    <img src="https://cdn.onetrust.com/images/my-ot/workflow1.png" width="550"/>
 
 6. Click the ​*Save*​​ button.
 7. Click the *Activate* button to enable the workflow. 
